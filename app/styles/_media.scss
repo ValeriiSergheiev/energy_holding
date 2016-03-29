@@ -1,0 +1,92 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+	/* Medium Devices, Desktops */
+	@media only screen and (max-width : 992px) {
+
+	}
+
+	/* Small Devices, Tablets */
+	@media only screen and (max-width : 590px) {
+		header {
+			height: 40px;
+		}
+		.menu {
+			display: none;
+		}
+		.authorization {
+			background-color: #fff;
+		}
+		form {
+			margin: 40px auto 0;
+			border: none;
+			border-radius: 0;
+			//width: 100%;
+			padding: 0 10px;
+			width: 300px;
+			height: 100%;
+			padding: 20px 0 40px 0;
+		}
+		.registration {
+			&::after {
+				width: 276px;
+			}
+		}
+		.data-text {
+			float: none;
+			text-align: center;
+			label {
+				display: none;
+			}
+			input {
+				height: 30px;
+				margin-top: 30px;
+				margin-left: 0;
+				width: calc(100% - 24px);
+			}
+		}
+		.remember-me {
+			margin-left: 0;
+		}
+		#btn-form {
+			bottom: -17px;
+		}
+
+		/* mobile menu */
+		.mob-btn {
+			display: block;
+		}
+		.menu {
+			//display: block;
+			width: 100%;
+			background-color: #4CAF50;
+			margin-top: 45px;
+			position: relative;
+			z-index: 10;
+			margin-bottom: 10px;
+			li {
+				display: block;
+				&:last-child a {
+					border-bottom: 3px solid lighten(#4CAF50, 10%);
+				}
+				a {
+					display: block;
+					border-bottom: 1px solid lighten(#4CAF50, 10%);
+					text-align: center;
+				}
+			}
+		}
+		/* end mobile menu */
+	}
+
+	/* Extra Small Devices, Phones */ 
+	@media only screen and (max-width : 480px) {
+
+	}
+
+	/* Custom, iPhone Retina */ 
+	@media only screen and (max-width : 320px) {
+
+	}
